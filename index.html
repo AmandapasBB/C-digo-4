@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlertH - Detector de Som</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/logo.png" alt="Logo do AlertH" />
+      <h1>AlertH - Detector de Som</h1>
+    </header>
+
+    <main>
+      <button id="start">Ligar Detector</button>
+      <button id="stop" style="display: none">Desligar Detector</button>
+      <p id="status">Aguardando...</p>
+
+      <button id="instructions">Manual de Instruções</button>
+      <div id="instruction-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <h2>Manual de Vibração</h2>
+          <ul>
+            <li><strong>1 vibração curta:</strong> Som rápido detectado.</li>
+            <li><strong>2 vibrações curtas:</strong> Som médio detectado.</li>
+            <li><strong>Vibração longa:</strong> Som alto contínuo.</li>
+            <li>
+              <strong>Vibração pulsante:</strong> Barulhos constantes (ex:
+              tiros, buzinas, gritaria).
+            </li>
+            <li>
+              <strong>Vibração muito longa:</strong> Alerta de ruído intenso e
+              perigoso.
+            </li>
+          </ul>
+          <button id="close-modal">Fechar</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

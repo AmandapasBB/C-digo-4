@@ -1,0 +1,21 @@
+{
+  "name": "AlertH",
+  "short_name": "AlertH",
+  "description": "Detector de Som com Alerta Tátil",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ff4f4f",
+  "theme_color": "#ff4f4f",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
